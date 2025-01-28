@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+           height:150px;
+           width: 150px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">
+Koding er gøy! (når man skjønner det;)))))
+
+    </div>
+
+    <div id="box2">
+  div #2 - ikke like kul tekst her :(
+    </div>
+
+    <div id="image"></div>
+
+
+
+    <script>
+    document.getElementById("image").innerHTML = `<img src="img/coding-1841550_640.webp">`
+//Ta tak i box1 -- bytte ut det som står i div'en der
+
+document.getElementById('box1').innerHTML = "Koding er dritt"
+//document = hele nettsida  
+//getElementById = se etter det elementet som har ID'en "xxxx"
+//.innerHTML = dette elementet sitt "innhold" / "inni mellom tag'ene  <div>INNERHTML! YAY</div>"
+
+document.getElementById('box2').innerHTML = "Koding er kult"
+
+
+/*
+Tre diver
+Når du trykker på hver av divene
+Kommer det et kult bilde av en kul bil i den diven du trykker på 
+
+onclick, function koblet til den onclicken - function endrer innerHTML til kuuult bilbilde ;D
+
+*/
+
+
+    </script>
+</body>
+</html>
